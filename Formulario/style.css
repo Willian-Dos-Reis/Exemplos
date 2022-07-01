@@ -56,7 +56,7 @@ body{
 
 /*cabecalio da box esquerda*/
 .form-header{
-    margin-bottom: -100px;
+    margin-bottom: 3rem;
     display: flex;
     justify-content: space-between;
 }
@@ -76,7 +76,6 @@ body{
 
 /*box do botão de login*/
 .login-button{
-    
     display: flex;
     align-items: center;
     
@@ -161,7 +160,7 @@ body{
     display: flex;
     justify-content: space-between;
     margin-top: 0.62rem;
-    padding: 0 0.5rem ;
+    padding: 0 0 .5rem ;
 }
 
 /*genero de masculino e femenino*/
@@ -183,12 +182,12 @@ body{
 }
 
 /*botao continue*/
-.continue-button button{
-    width: 100%;
-    margin-top: 2.5rem;
-    border: none;
+.continue-button{
     background-color: #6c63ff;
-    padding: 0.62rem;
+    width: 100%;
+    border:none;
+    margin-top: 2.5rem;
+    padding: 0.63rem;
     border-radius: 5px;
     cursor: pointer;
 }
@@ -199,7 +198,7 @@ body{
 }
 
 /*link do botão */
-.continue-button button a {
+.continue-button button  a {
     text-decoration: none;
     font-size: 0.93rem;
     font-weight: 500;
