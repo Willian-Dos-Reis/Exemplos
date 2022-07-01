@@ -1,5 +1,207 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
 
-div{
-    border: 4px solid black;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0c0ce94d;
+    
+}
+/*bloco interiro*/
+.container{
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
+}
+
+/*box da imagem*/
+.form-image{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fde3a7d7;
+    padding: 1rem;
+
+}
+
+/*imagem*/
+.form-image img{
+    width: 31rem;
+
+}
+
+/*box da esquerda*/
+.form{
+    width: 50%;
+    /*perfeio para alinhar inter no meio*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /*um embaixo e do lado do outro*/
+    background-color: #fff;
+    padding: 3rem;
+
+}
+
+/*cabecalio da box esquerda*/
+.form-header{
+    margin-bottom: -100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*barra roxa embaixo do cadastre-ser*/
+.form-header h1::after{
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: #6c63ff;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+
+
+/*box do botão de login*/
+.login-button{
+    
+    display: flex;
+    align-items: center;
+    
+}
+
+/*o proprio botao*/
+.login-button button{
+    border: none;
+    background-color: #6c63ff ;
+    padding: 0.4rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/*quando o mouser passar pelo botao */
+.login-button button:hover{
+    background-color: #6b63fff1 ;
+    
+}
+
+/*link /letra q esta no botão*/
+.login-button button a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+    
+}
+
+/*box de informações abaixo*/
+.input-group{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0 ;
+    
+
+}
+
+/*box de perguntas*/
+.input-box{
+    display: flex;
+    /*colocando a label e inpu um embaixo do outro*/
+    flex-direction: column;/*um embaixo do outos as filhas*/
+    margin-bottom: 1.1rem;
+}
+
+/*input das boxs */
+.input-box input{
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+
+}
+
+/*quando passar o mouser no input*/
+.input-box input:hover{
+    background-color: #eeeeee75;
+}
+
+/*quando clica muda a cor da borda*/
+.input-box input:focus-visible{
+    outline: 1px solid #6c63ff;
+}
+
+/*titulo das labes e generos*/
+.input-box label,
+.gender-title h6 {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+
+/*cor das letras dos inputs*/
+.input-box input::-moz-placeholder{
+    color: #000000be;
+}
+
+/*box menor dos generos*/
+.gender-group{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.62rem;
+    padding: 0 0.5rem ;
+}
+
+/*genero de masculino e femenino*/
+.gender-input{
+    display: flex;
+    align-items: center;
+}
+
+/*input dos generos*/
+.gender-input input{
+    margin-right: 0.35rem;
+}
+
+/*label dos generos*/
+.gender-input label {
+    font-size: 0.81rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+
+/*botao continue*/
+.continue-button button{
+    width: 100%;
+    margin-top: 2.5rem;
+    border: none;
+    background-color: #6c63ff;
+    padding: 0.62rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/*hover do botao*/
+.continue-button button:hover{
+    background-color: #6b63fff1;
+}
+
+/*link do botão */
+.continue-button button a {
+    text-decoration: none;
+    font-size: 0.93rem;
+    font-weight: 500;
+    color: #fff;
 }
