@@ -1,25 +1,24 @@
 function carregar (){
     var msg = document.getElementById("msg")
-    var img = document.getElementById("img") 
+    var img = document.getElementById("imagem") 
 
-    //criando a var data, pegando a hr atual
+    //criando a var data, pegando a hora atual do pc 
     var data = new Date()
     var hora = data.getHours()
 
-    var hora = 20;
+  
 
-    // mundando oq estiver dente de msg para isso 
-    msg.innerHTML = 'agora sao '  
-
-    // colocando se nas hrs
+    // colocando se nas horas
     if (hora >= 0 && hora < 12 ){
-        //mudando a img para outra foto
-        img.src = 'fotomanha.png'
+        //mudando a img para outra foto de minha pasta
+        img.src = 'fotomanha.png.jpg'
     } else if  (hora >=12 && hora <= 18 ){
-        img.src = 'fototarde.png'
+        //se for de tarde
+        img.src = 'fototarde.png.jpg'
     
     } else {
-        img.src = 'fotonoite.png'
+        //se for de noite 
+        img.src = 'fotonoite.png.jpg'
     }
 
 
