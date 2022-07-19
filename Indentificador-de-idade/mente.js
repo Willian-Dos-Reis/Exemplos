@@ -16,7 +16,7 @@ function verificar(){
         var genero = ''
         if(fsex[0].checked){ //se marcar o inpt 0 homene
             genero = 'homem'
-        }else if(fsec[1].checked){ //se marcar o inpt 1 mulher
+        }else if(fsex[1].checked){ //se marcar o inpt 1 mulher
             genero = 'mulher'
         }
         //mude o res para oq tivr emm genero e oq tiver em idade
