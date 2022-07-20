@@ -12,7 +12,7 @@ function verificar(){
         //a var idade é igual ano atual - ano dato
         var idade = ano - (fano.value)
 
-        //a var da imaegm
+        //crinado a var da imaegm pelo jd
         var img = document.getElementById("img")
         img.setAttribute('id','foto') //criando a tag img pelo javscrpit
 
