@@ -10,27 +10,28 @@ function verificar(){
     } else {
         var fsex = document.getElementsByName("radsex")
         //a var idade é igual ano atual - ano dato
-        var idade = ano - (fano.value)
+        var idade = ano - Number(fano.value)
 
         //crinado a var da imaegm pelo jd
-        var img = document.getElementById("img")
-        img.setAttribute('id','foto') //criando a tag img pelo javscrpit
+        var img = document.createElement("img")
+       
 
         //var genero vai ser
         var genero = ''
         if(fsex[0].checked){ //se marcar o inpt 0 homene
-            genero = 'homem'
-
+            
+            genero = 'homen'
             //Criando o se da idade 
             if(idade>=0 && idade <10){
                 //criança
-                img.setAttribute('src','menino-criança.png')
+                img.setAttribute('src','oculos.png')
+                
             }else if(idade<21){
                 //jovem
                 img.setAttribute('src','menino-joven.png')
             }else if (idade <50){
                 //adutlo
-                img.setAttribute('src','hoemn-adulto.jpg')
+                img.setAttribute('src','hoemn-adulto.png')
             }else{
                 //idoso
             }
@@ -56,7 +57,7 @@ function verificar(){
 
         //mude o res para oq tivr emm genero e oq tiver em idade
         res.innerHTML = `detectamos ${genero} com ${idade} anos`
-
+        //para fazer a imagem aparecer
         res.appendChild(img)
     
     }
