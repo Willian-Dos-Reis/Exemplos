@@ -15,19 +15,19 @@
     <section>
         <div class="p" id="=msg">
             <p>Ano de Nascimento
-                <input type="number" name="txtano" id="ano">
+                <input type="number" name="txtano" id="ano" min="0">
             </p>
 
             <p>Sexo
-                <input type="radio" name="radsex" id="masc" >
-                <label for="masc">Masculino</label> 
-                <input type="radio" name="radsex" id="fem">
+                <input type="radio" name="radsex" id="masc" checked >
+                <label for="mas">Masculino</label> 
+                <input type="radio" name="radsex" id="fem" checked>
                 <label for="fem">Femenino</label>
             </p>
 
             <p>
                
-                <button onclick="verificar()">Verificar</button>
+                <button onclick="verificar()" vallue="verificar">Verificar</button>
             </p>
 
             
